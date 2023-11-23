@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 import { Source_Code_Pro } from 'next/font/google'
 import './globals.css'
+import { UserProvider } from '@auth0/nextjs-auth0/client'
 
 
 const sourceCodePro = Source_Code_Pro({ subsets: ['latin'] })
@@ -18,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="mytheme">
       <head></head>
-      <body className={sourceCodePro.className}>{children}</body>
+      <UserProvider>
+        <body className={sourceCodePro.className}>{children}</body>
+      </UserProvider>
     </html>
   )
 }

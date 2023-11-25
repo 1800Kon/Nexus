@@ -12,7 +12,6 @@ function Login() {
             <div className="flex h-full w-7/12 bg-base-100 border-2 rounded-lg place-items-center z-10 bg-opacity-90">
                 <div className='flex flex-col text-center space-y-20 items-center m-auto'>
                     <TypingText text="Welcome to <span style='color:#4ade80';>Nexus</span>" />
-
                     <Image
                         priority
                         src={nexusLogo}

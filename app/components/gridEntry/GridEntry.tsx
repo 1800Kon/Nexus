@@ -38,6 +38,7 @@ const GridEntry: React.FC = () => {
         switch (id) {
             case "Clock":
                 console.log('Adding clock');
+                return (<div className='w-24 h-24 bg-slate-200'>This is a clock that was added</div>)
                 break;
             case "Tracker":
                 console.log('Adding tracker');

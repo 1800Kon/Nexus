@@ -6,7 +6,7 @@ import TypingText from '../components/typingText/typingText'
 
 function Login() {
     return (
-        <div className="flex flex-row h-screen w-screen p-20">
+        <div className="flex flex-row h-screen w-screen p-20 ">
             <ParticlesBg />
             {/* Logo and salutations */}
             <div className="flex h-full w-7/12 bg-base-100 border-2 rounded-lg place-items-center z-10 bg-opacity-90">

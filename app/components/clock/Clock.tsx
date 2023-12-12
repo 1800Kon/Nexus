@@ -1,7 +1,13 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 
-const Clock: React.FC = () => {
+interface ClockProps {
+  onClick?: () => void;
+}
+
+// This module is just a clock.
+
+const Clock: React.FC<ClockProps> = ({ onClick }) => {
   const [time, setTime] = useState('Loading...')
 
   useEffect(() => {
@@ -13,7 +19,7 @@ const Clock: React.FC = () => {
   }, [])
 
   return (
-    <div className='flex flex-row items-center'>
+    <div className='flex flex-row items-center cursor-pointer' onClick={onClick}>
       <p className='text-xl'>{time}</p>
     </div>
   )

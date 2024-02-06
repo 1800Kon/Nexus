@@ -10,7 +10,7 @@ interface TickerProps {
 const Ticker: React.FC<TickerProps> = ({ onClick }) => {
 
     return (
-        <div className='flex flex-row items-center cursor-pointer' onClick={onClick}>
+        <div className='flex items-center justify-center cursor-pointer h-full' onClick={onClick}>
             <p className='text-xl'>Ticker</p>
         </div>
     )

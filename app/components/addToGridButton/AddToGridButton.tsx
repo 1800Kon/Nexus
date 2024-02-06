@@ -1,9 +1,9 @@
 'use client'
+import { JSX, useState } from 'react'
 import penIcon from '../../../public/penIcon.svg'
 import Image from 'next/image'
 import Clock from '../clock/Clock'
 import Ticker from '../ticker/Ticker'
-import { JSX, useState } from 'react'
 import Tracker from '../tracker/Tracker'
 import Github from '../github/Github'
 import Tasks from '../tasks/Tasks'
@@ -92,7 +92,7 @@ const AddToGridButton = () => {
 
 
     return (
-        <>
+        <div>
             <div className='tooltip' data-tip='Click to add a new module'>
                 <Image className='cursor-pointer'
                     priority
@@ -120,7 +120,7 @@ const AddToGridButton = () => {
                     <button>close</button>
                 </form>
             </dialog >
-        </>
+        </div>
     );
 }
 

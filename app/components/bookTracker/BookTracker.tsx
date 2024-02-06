@@ -10,7 +10,7 @@ interface BookTrackerProps {
 const BookTracker: React.FC<BookTrackerProps> = ({ onClick }) => {
 
     return (
-        <div className='flex flex-row items-center cursor-pointer' onClick={onClick}>
+        <div className='flex items-center justify-center cursor-pointer h-full' onClick={onClick}>
             <p className='text-xl'>Book Tracker</p>
         </div>
     )
